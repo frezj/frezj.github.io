@@ -232,7 +232,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75re
 .life .big{grid-row:span 2}
 
 /* ===== hybrid shell ===== */
-*{border-radius:0!important}
+*,*::before,*::after{border-radius:0!important}
 .open i{border-radius:50%!important}
 body{background:var(--bg);padding-top:var(--top)}
 .wrap{max-width:var(--wrap);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
