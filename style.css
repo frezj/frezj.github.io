@@ -225,3 +225,13 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75re
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 @media print{.tabs-wrap,.top .lang,.skip{display:none}.panel[hidden]{display:block!important}body{background:#fff;color:#000}}
 .proj h3{margin-bottom:.55rem}
+.help h3{color:var(--arcane)}
+.leadby .card h3{margin-bottom:.45rem}
+.leadby .card p{color:var(--muted);margin:0}
+.more{margin-top:1rem}
+.more a,.note a{color:var(--gold-text)}
+.note{color:var(--soft);font-size:.92rem;max-width:46rem;margin-top:1rem}
+.story{max-width:46rem;border-left:4px solid var(--crimson)}
+.story p{margin:0}
+.story p+p{margin-top:.6rem}
+.life .big{grid-row:span 2}
