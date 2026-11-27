@@ -20,7 +20,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#16121c">
+<meta name="theme-color" content="#232226">
 <link rel="preload" href="/fonts/unbounded-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/onest-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
@@ -31,58 +31,73 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-
-<header class="wrap top">
-  <a class="mark" href="/" aria-label="Nikita Chirkov, home">
-    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 14 14 2v12z" fill="#c8a04b"/></svg>
-    chirkov.here
-  </a>
-  <nav class="lang" aria-label="Language"><span aria-current="page">EN</span><a href="/ru/" hreflang="ru" lang="ru">RU</a></nav>
+<header class="topbar">
+  <button class="burger" type="button" aria-label="Menu" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="mark" href="/"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 14 14 2v12z" fill="#b1a296"/></svg>chirkov.here</a>
+  <div class="tb-right">
+    <nav class="lang" aria-label="Language"><span aria-current="page">EN</span><a href="/ru/" hreflang="ru" lang="ru">RU</a></nav>
+    <a class="tb-mail" href="mailto:nikita@chirkov.here"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>nikita@chirkov.here</span></a>
+  </div>
 </header>
 
+<aside class="nav-side" id="side">
+  <nav aria-label="Sections">
+    <ul class="side-nav">
+      <li><a href="#overview" data-tab="overview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 11 12 4l9 7v9h-6v-6H9v6H3z"/></svg><span>Overview</span></a></li>
+      <li><a href="#results" data-tab="results"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Results</span></a></li>
+      <li><a href="#projects" data-tab="projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4" width="18" height="12"/><path d="m10 8 5 2-5 2z"/><path d="M3 20h18"/></svg><span>Projects</span></a></li>
+      <li><a href="#experience" data-tab="experience"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="7" width="18" height="13"/><path d="M8 7V4h8v3M3 12h18"/></svg><span>Experience</span></a></li>
+      <li><a href="#skills" data-tab="skills"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h13"/><circle cx="19" cy="12" r="2"/></svg><span>Skills</span></a></li>
+      <li><a href="#life" data-tab="life"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg><span>Outside work</span></a></li>
+      <li><a href="#contact" data-tab="contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>Contact</span></a></li>
+    </ul>
+  </nav>
+  <p class="side-h">Find me</p>
+  <ul class="side-links">
+      <li><a href="https://t.me/frezj" rel="me"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m21 4-18 7 6 2 2 6 3-4 5 4z"/><path d="m9 13 8-6"/></svg><span>Telegram</span></a></li>
+      <li><a href="https://wa.me/message/LMW3CULQNP33F1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg><span>WhatsApp</span></a></li>
+      <li><a href="https://www.linkedin.com/in/frezj" rel="me"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><span>LinkedIn</span></a></li>
+      <li><a href="https://github.com/frezj" rel="me"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg><span>GitHub</span></a></li>
+      <li><a href="/Nikita_Chirkov_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg><span>CV, PDF</span></a></li>
+  </ul>
+  <p class="side-foot">&copy; 2026 Nikita Chirkov, Belgrade</p>
+</aside>
+<div class="scrim" hidden></div>
+
 <main id="main">
-<section class="wrap hero">
-  <div>
-    <p class="open"><i aria-hidden="true"></i>Open to Data Lead and Head of Data roles</p>
-    <h1 class="name"><span>Nikita</span><span class="tail">Chirkov</span></h1>
-    <p class="role"><b>Data Lead</b> (Engineering &amp; Analytics) in Belgrade. 9 years in data. I have led teams of 5 to 20 people.</p>
-    <div class="cta">
-      <a class="btn main" href="mailto:nikita@chirkov.here"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>nikita@chirkov.here</a>
-      <a class="btn" href="https://t.me/frezj" rel="me">Telegram</a>
-      <a class="btn" href="https://wa.me/data_head">WhatsApp</a>
-      <a class="btn" href="https://www.linkedin.com/in/frezj" rel="me">LinkedIn</a>
-      <a class="btn" href="/Nikita_Chirkov_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg>CV, PDF</a>
+  <section class="banner">
+    <div class="wrap banner-grid">
+    <div class="banner-in">
+      <p class="open"><i aria-hidden="true"></i>Open to Data Lead and Head of Data roles</p>
+      <h1 class="name"><span>Nikita</span><span class="tail">Chirkov</span></h1>
+      <p class="role">Data Lead (Engineering &amp; Analytics) in Belgrade. 9 years in data. I have led teams of 5 to 20 people.</p>
+      <p class="now">Now: Lead Data Engineer at Novacard, consumer lending in Mexico, remote.</p>
+      <div class="cta">
+        <a class="btn main" href="mailto:nikita@chirkov.here">nikita@chirkov.here</a>
+        <a class="btn ghost" href="/Nikita_Chirkov_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg>CV, PDF</a>
+      </div>
     </div>
-  </div>
-  <aside class="wallet" aria-label="Now and key numbers">
-    <p class="lbl">Now</p>
-    <p class="co">Novacard</p>
-    <p class="sub">Lead Data Engineer. Consumer lending in Mexico, remote from Belgrade.</p>
-    <div class="tiles">
-      <div class="tile"><b>9 yrs</b><span>in data</span></div>
-      <div class="tile"><b>20</b><span>people in my biggest team</span></div>
-      <div class="tile"><b>8</b><span>markets with ML in production</span></div>
-      <div class="tile"><b>100+ TB</b><span>databases I work with</span></div>
+    <dl class="hstats">
+      <div><dt>9 yrs</dt><dd>in data</dd></div>
+      <div><dt>20</dt><dd>people in my biggest team</dd></div>
+      <div><dt>8</dt><dd>markets with ML in production</dd></div>
+      <div><dt>100+ TB</dt><dd>databases I work with</dd></div>
+    </dl>
     </div>
-  </aside>
-</section>
+  </section>
 
-<div class="tabs-wrap">
-  <div class="wrap">
-    <div class="tabbar" role="tablist" aria-label="Sections">
-      <button class="tab" role="tab" id="t-overview" data-tab="overview" aria-controls="overview-panel" aria-selected="true">Overview</button>
-      <button class="tab" role="tab" id="t-results" data-tab="results" aria-controls="results-panel" aria-selected="false" tabindex="-1">Results</button>
-      <button class="tab" role="tab" id="t-projects" data-tab="projects" aria-controls="projects-panel" aria-selected="false" tabindex="-1">Projects</button>
-      <button class="tab" role="tab" id="t-experience" data-tab="experience" aria-controls="experience-panel" aria-selected="false" tabindex="-1">Experience</button>
-      <button class="tab" role="tab" id="t-skills" data-tab="skills" aria-controls="skills-panel" aria-selected="false" tabindex="-1">Skills</button>
-      <button class="tab" role="tab" id="t-life" data-tab="life" aria-controls="life-panel" aria-selected="false" tabindex="-1">Outside work</button>
-      <button class="tab" role="tab" id="t-contact" data-tab="contact" aria-controls="contact-panel" aria-selected="false" tabindex="-1">Contact</button>
-      <span class="tab-ind" aria-hidden="true"></span>
-    </div>
-  </div>
-</div>
+  <nav class="secnav" aria-label="Sections">
+    <a href="#overview" data-tab="overview">Overview</a>
+    <a href="#results" data-tab="results">Results</a>
+    <a href="#projects" data-tab="projects">Projects</a>
+    <a href="#experience" data-tab="experience">Experience</a>
+    <a href="#skills" data-tab="skills">Skills</a>
+    <a href="#life" data-tab="life">Outside work</a>
+    <a href="#contact" data-tab="contact">Contact</a>
+  </nav>
 
-<section class="panel" id="overview-panel" role="tabpanel" aria-labelledby="t-overview">
+  <div class="panels">
+<section class="panel" id="overview-panel">
   <div class="wrap">
     <div class="ov">
       <div class="about">
@@ -147,7 +162,7 @@
   </div>
 </section>
 
-<section class="panel" id="results-panel" role="tabpanel" aria-labelledby="t-results">
+<section class="panel" id="results-panel">
   <div class="wrap">
     <h2 class="ph">Results</h2>
     <p class="lead">Things that moved because of my work. Bars are to scale.</p>
@@ -185,6 +200,8 @@
         </div>
       </div>
     </div>
+    <div class="res-bottom">
+    <div class="res-nums">
     <h3 class="sub-h">More numbers</h3>
     <div class="card tablecard">
       <table class="nums">
@@ -202,16 +219,19 @@
       </table>
     </div>
     <p class="note">How it was measured: billing data, A/B tests and test cases. Speed comes from load tests. Savings come from finance reports and the actual drop in vendor invoices.</p>
-
+    </div>
+    <div class="res-story">
     <h3 class="sub-h">The collections story</h3>
     <div class="card story">
       <p>For three weeks I also ran collections. I changed the strategy: we moved to a personalized approach to debtors and used ML for the analysis.</p>
       <p>The repayment rate went from 51% to 85%, a company record. To be fair, the low starting point helped too.</p>
     </div>
+    </div>
+    </div>
   </div>
 </section>
 
-<section class="panel" id="projects-panel" role="tabpanel" aria-labelledby="t-projects">
+<section class="panel" id="projects-panel">
   <div class="wrap">
     <h2 class="ph">Projects</h2>
     <p class="lead">What I built. Each of these runs on databases with 50+ tables and over 100 TB of data.</p>
@@ -259,7 +279,7 @@
   </div>
 </section>
 
-<section class="panel" id="experience-panel" role="tabpanel" aria-labelledby="t-experience">
+<section class="panel" id="experience-panel">
   <div class="wrap">
     <h2 class="ph">Experience</h2>
     <p class="lead">Open a role to see what I did there.</p>
@@ -346,7 +366,7 @@
   </div>
 </section>
 
-<section class="panel" id="skills-panel" role="tabpanel" aria-labelledby="t-skills">
+<section class="panel" id="skills-panel">
   <div class="wrap">
     <h2 class="ph">Skills</h2>
     <p class="lead">What I use day to day. Highlighted ones I use most.</p>
@@ -368,7 +388,7 @@
   </div>
 </section>
 
-<section class="panel" id="life-panel" role="tabpanel" aria-labelledby="t-life">
+<section class="panel" id="life-panel">
   <div class="wrap">
     <h2 class="ph">Outside work</h2>
     <p class="lead">What I do when I am not working with data.</p>
@@ -414,7 +434,7 @@
   </div>
 </section>
 
-<section class="panel" id="contact-panel" role="tabpanel" aria-labelledby="t-contact">
+<section class="panel" id="contact-panel">
   <div class="wrap contact">
     <div>
       <h2 class="ph">Contact</h2>
@@ -424,20 +444,16 @@
     </div>
     <ul class="links">
       <li><a href="https://t.me/frezj" rel="me">Telegram <small>@frezj</small></a></li>
-      <li><a href="https://wa.me/data_head">WhatsApp <small>@data_head</small></a></li>
+      <li><a href="https://wa.me/message/LMW3CULQNP33F1">WhatsApp <small>message me</small></a></li>
       <li><a href="https://www.linkedin.com/in/frezj" rel="me">LinkedIn <small>linkedin.com/in/frezj</small></a></li>
       <li><a href="https://github.com/frezj" rel="me">GitHub <small>github.com/frezj</small></a></li>
       <li><a href="/ru/" hreflang="ru" lang="ru">По-русски <small>chirkov.here/ru</small></a></li>
     </ul>
   </div>
 </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    <span>&copy; 2026 Nikita Chirkov, Belgrade</span>
-    <span>frezj</span>
   </div>
-</footer>
+
+  <footer class="foot"><span>&copy; 2026 Nikita Chirkov, Belgrade</span><span>frezj</span></footer>
+</main>
 </body>
 </html>
