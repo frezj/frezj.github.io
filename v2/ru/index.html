@@ -18,69 +18,83 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#dce0e7">
+<meta name="theme-color" content="#5d5c61">
 <meta name="robots" content="noindex">
 <link rel="preload" href="/fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/v2/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","@id":"https://chirkov.here/#me","name":"Никита Чирков","alternateName":["Nikita Chirkov","frezj"],"url":"https://chirkov.here/ru/","email":"mailto:nikita@chirkov.here","jobTitle":"Data Lead (Engineering & Analytics)","address":{"@type":"PostalAddress","addressLocality":"Белград","addressCountry":"RS"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Technische Universität Berlin"},{"@type":"CollegeOrUniversity","name":"РУДН"}],"knowsAbout":["Data engineering","Data warehousing","ClickHouse","Airflow","Spark","dbt","Snowflake","Power BI","A/B testing","Demand forecasting","LLM applications"],"knowsLanguage":["ru","en","sr","es"],"sameAs":["https://www.linkedin.com/in/frezj","https://github.com/frezj","https://t.me/frezj"]}
 </script>
-<script defer src="/app.js"></script>
+<script defer src="/v2/app.js"></script>
+<link rel="preload" href="/v2/img/hero.webp" as="image">
 </head>
 <body>
 <a class="skip" href="#main">К содержанию</a>
-
-<header class="wrap top">
-  <a class="mark" href="/v2/ru/" aria-label="Никита Чирков, главная">
-    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 14 14 2v12z" fill="#1f5bff"/></svg>
-    chirkov.here
-  </a>
-  <nav class="lang" aria-label="Язык"><a href="/v2/" hreflang="en" lang="en">EN</a><span aria-current="page">RU</span></nav>
+<header class="topbar">
+  <button class="burger" type="button" aria-label="Меню" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="mark" href="/v2/ru/"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 14 14 2v12z" fill="#b1a296"/></svg>chirkov.here</a>
+  <div class="tb-right">
+    <nav class="lang" aria-label="Language"><a href="/v2/" hreflang="en" lang="en">EN</a><span aria-current="page">RU</span></nav>
+    <a class="tb-mail" href="mailto:nikita@chirkov.here"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>nikita@chirkov.here</span></a>
+  </div>
 </header>
 
+<aside class="nav-side" id="side">
+  <nav aria-label="Разделы">
+    <ul class="side-nav">
+      <li><a href="#overview" data-tab="overview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 11 12 4l9 7v9h-6v-6H9v6H3z"/></svg><span>Обо мне</span></a></li>
+      <li><a href="#results" data-tab="results"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Результаты</span></a></li>
+      <li><a href="#projects" data-tab="projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4" width="18" height="12"/><path d="m10 8 5 2-5 2z"/><path d="M3 20h18"/></svg><span>Проекты</span></a></li>
+      <li><a href="#experience" data-tab="experience"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="7" width="18" height="13"/><path d="M8 7V4h8v3M3 12h18"/></svg><span>Опыт</span></a></li>
+      <li><a href="#skills" data-tab="skills"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h13"/><circle cx="19" cy="12" r="2"/></svg><span>Навыки</span></a></li>
+      <li><a href="#life" data-tab="life"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg><span>Вне работы</span></a></li>
+      <li><a href="#contact" data-tab="contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>Контакты</span></a></li>
+    </ul>
+  </nav>
+  <p class="side-h">Где меня найти</p>
+  <ul class="side-links">
+      <li><a href="https://t.me/frezj" rel="me"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m21 4-18 7 6 2 2 6 3-4 5 4z"/><path d="m9 13 8-6"/></svg><span>Telegram</span></a></li>
+      <li><a href="https://wa.me/data_head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg><span>WhatsApp</span></a></li>
+      <li><a href="https://www.linkedin.com/in/frezj" rel="me"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><span>LinkedIn</span></a></li>
+      <li><a href="https://github.com/frezj" rel="me"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg><span>GitHub</span></a></li>
+      <li><a href="/Nikita_Chirkov_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg><span>CV, PDF</span></a></li>
+  </ul>
+  <p class="side-foot">&copy; 2026 Никита Чирков, Белград</p>
+</aside>
+<div class="scrim" hidden></div>
+
 <main id="main">
-<section class="wrap hero">
-  <div>
-    <p class="open"><i aria-hidden="true"></i>Открыт к ролям Data Lead и Head of Data</p>
-    <h1 class="name"><span>Никита</span><span class="tail">Чирков</span></h1>
-    <p class="role"><b>Data Lead</b> (Engineering &amp; Analytics) в Белграде. 9 лет в данных. Руководил командами от 5 до 20 человек.</p>
-    <div class="cta">
-      <a class="btn main" href="mailto:nikita@chirkov.here"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>nikita@chirkov.here</a>
-      <a class="btn" href="https://t.me/frezj" rel="me">Telegram</a>
-      <a class="btn" href="https://wa.me/data_head">WhatsApp</a>
-      <a class="btn" href="https://www.linkedin.com/in/frezj" rel="me">LinkedIn</a>
-      <a class="btn" href="/Nikita_Chirkov_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg>CV, PDF</a>
+  <section class="banner">
+    <div class="banner-in">
+      <p class="open"><i aria-hidden="true"></i>Открыт к ролям Data Lead и Head of Data</p>
+      <h1 class="name">Никита Чирков</h1>
+      <p class="role">Data Lead (Engineering &amp; Analytics) в Белграде. 9 лет в данных. Руководил командами от 5 до 20 человек.</p>
+      <p class="now">Сейчас: Lead Data Engineer в Novacard, потребкредиты в Мексике, удалённо.</p>
+      <div class="cta">
+        <a class="btn main" href="mailto:nikita@chirkov.here">nikita@chirkov.here</a>
+        <a class="btn ghost" href="/Nikita_Chirkov_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg>CV, PDF</a>
+      </div>
     </div>
-  </div>
-  <aside class="wallet" aria-label="Сейчас и главные цифры">
-    <p class="lbl">Сейчас</p>
-    <p class="co">Novacard</p>
-    <p class="sub">Lead Data Engineer. Потребкредиты в Мексике, удалённо из Белграда.</p>
-    <div class="tiles">
-      <div class="tile"><b>9 лет</b><span>в данных</span></div>
-      <div class="tile"><b>20</b><span>человек в самой большой команде</span></div>
-      <div class="tile"><b>8</b><span>стран с ML в проде</span></div>
-      <div class="tile"><b>100+ ТБ</b><span>в базах, с которыми работаю</span></div>
-    </div>
-  </aside>
-</section>
+    <dl class="hstats">
+      <div><dt>9 лет</dt><dd>в данных</dd></div>
+      <div><dt>20</dt><dd>человек в самой большой команде</dd></div>
+      <div><dt>8</dt><dd>стран с ML в проде</dd></div>
+      <div><dt>100+ ТБ</dt><dd>в базах, с которыми работаю</dd></div>
+    </dl>
+  </section>
 
-<div class="tabs-wrap">
-  <div class="wrap">
-    <div class="tabbar" role="tablist" aria-label="Разделы">
-      <button class="tab" role="tab" id="t-overview" data-tab="overview" aria-controls="overview-panel" aria-selected="true">Обо мне</button>
-      <button class="tab" role="tab" id="t-results" data-tab="results" aria-controls="results-panel" aria-selected="false" tabindex="-1">Результаты</button>
-      <button class="tab" role="tab" id="t-projects" data-tab="projects" aria-controls="projects-panel" aria-selected="false" tabindex="-1">Проекты</button>
-      <button class="tab" role="tab" id="t-experience" data-tab="experience" aria-controls="experience-panel" aria-selected="false" tabindex="-1">Опыт</button>
-      <button class="tab" role="tab" id="t-skills" data-tab="skills" aria-controls="skills-panel" aria-selected="false" tabindex="-1">Навыки</button>
-      <button class="tab" role="tab" id="t-life" data-tab="life" aria-controls="life-panel" aria-selected="false" tabindex="-1">Вне работы</button>
-      <button class="tab" role="tab" id="t-contact" data-tab="contact" aria-controls="contact-panel" aria-selected="false" tabindex="-1">Контакты</button>
-      <span class="tab-ind" aria-hidden="true"></span>
-    </div>
-  </div>
-</div>
+  <nav class="secnav" aria-label="Разделы">
+    <a href="#overview" data-tab="overview">Обо мне</a>
+    <a href="#results" data-tab="results">Результаты</a>
+    <a href="#projects" data-tab="projects">Проекты</a>
+    <a href="#experience" data-tab="experience">Опыт</a>
+    <a href="#skills" data-tab="skills">Навыки</a>
+    <a href="#life" data-tab="life">Вне работы</a>
+    <a href="#contact" data-tab="contact">Контакты</a>
+  </nav>
 
-<section class="panel" id="overview-panel" role="tabpanel" aria-labelledby="t-overview">
+  <div class="panels">
+<section class="panel" id="overview-panel">
   <div class="wrap">
     <div class="ov">
       <div class="about">
@@ -145,7 +159,7 @@
   </div>
 </section>
 
-<section class="panel" id="results-panel" role="tabpanel" aria-labelledby="t-results">
+<section class="panel" id="results-panel">
   <div class="wrap">
     <h2 class="ph">Результаты</h2>
     <p class="lead">Что поменялось благодаря моей работе. Полоски в масштабе.</p>
@@ -209,30 +223,34 @@
   </div>
 </section>
 
-<section class="panel" id="projects-panel" role="tabpanel" aria-labelledby="t-projects">
+<section class="panel" id="projects-panel">
   <div class="wrap">
     <h2 class="ph">Проекты</h2>
     <p class="lead">Что я построил. Везде больше 50 таблиц и больше 100 ТБ данных.</p>
     <div class="grid3">
       <article class="card proj">
+        <img class="thumb" src="/v2/img/p-report.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">LLM</span>
         <h3>Генератор отчётов</h3>
         <p>Собирает отчёты для C-level с помощью LLM поверх хранилища.</p>
         <div class="tags"><span class="tag">LLM</span><span class="tag">ClickHouse</span><span class="tag">Python</span></div>
       </article>
       <article class="card proj">
+        <img class="thumb" src="/v2/img/p-analyst.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">LLM</span>
         <h3>ИИ-аналитик</h3>
         <p>Закрывает ad-hoc запросы и отвечает на вопросы по данным.</p>
         <div class="tags"><span class="tag">LLM</span><span class="tag">SQL</span><span class="tag">Python</span></div>
       </article>
       <article class="card proj">
+        <img class="thumb" src="/v2/img/p-semantic.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">BI</span>
         <h3>Генератор семантического слоя</h3>
         <p>Читает схему ClickHouse и строит семантический слой для Superset.</p>
         <div class="tags"><span class="tag">ClickHouse</span><span class="tag">Superset</span><span class="tag">LLM</span></div>
       </article>
       <article class="card proj">
+        <img class="thumb" src="/v2/img/p-dwh.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">DWH</span>
         <h3>Новое хранилище на ClickHouse</h3>
         <p>Debezium CDC и Spark. Больше 10 источников грузятся почти в реальном времени.</p>
@@ -240,6 +258,7 @@
         <div class="tags"><span class="tag">ClickHouse</span><span class="tag">Debezium</span><span class="tag">Spark</span></div>
       </article>
       <article class="card proj">
+        <img class="thumb" src="/v2/img/p-forecast.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">ML</span>
         <h3>Прогноз спроса</h3>
         <p>ML-прогноз в проде в 8 странах Юго-Восточной Европы.</p>
@@ -247,6 +266,7 @@
         <div class="tags"><span class="tag">Snowflake</span><span class="tag">Airflow</span><span class="tag">Power BI</span></div>
       </article>
       <article class="card proj">
+        <img class="thumb" src="/v2/img/p-anomaly.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">ML</span>
         <h3>Аномалии во взыскании</h3>
         <p>Находит рискованные счета раньше ручной проверки.</p>
@@ -257,7 +277,7 @@
   </div>
 </section>
 
-<section class="panel" id="experience-panel" role="tabpanel" aria-labelledby="t-experience">
+<section class="panel" id="experience-panel">
   <div class="wrap">
     <h2 class="ph">Опыт</h2>
     <p class="lead">Откройте место работы, чтобы увидеть, что я там делал.</p>
@@ -344,7 +364,7 @@
   </div>
 </section>
 
-<section class="panel" id="skills-panel" role="tabpanel" aria-labelledby="t-skills">
+<section class="panel" id="skills-panel">
   <div class="wrap">
     <h2 class="ph">Навыки</h2>
     <p class="lead">С чем работаю каждый день. Выделено то, чем пользуюсь чаще всего.</p>
@@ -366,7 +386,7 @@
   </div>
 </section>
 
-<section class="panel" id="life-panel" role="tabpanel" aria-labelledby="t-life">
+<section class="panel" id="life-panel">
   <div class="wrap">
     <h2 class="ph">Вне работы</h2>
     <p class="lead">Чем занимаюсь, когда не работаю с данными.</p>
@@ -412,7 +432,7 @@
   </div>
 </section>
 
-<section class="panel" id="contact-panel" role="tabpanel" aria-labelledby="t-contact">
+<section class="panel" id="contact-panel">
   <div class="wrap contact">
     <div>
       <h2 class="ph">Контакты</h2>
@@ -429,13 +449,9 @@
     </ul>
   </div>
 </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    <span>&copy; 2026 Никита Чирков, Белград</span>
-    <span>frezj</span>
   </div>
-</footer>
+
+  <footer class="foot"><span>&copy; 2026 Никита Чирков, Белград</span><span>frezj</span></footer>
+</main>
 </body>
 </html>
