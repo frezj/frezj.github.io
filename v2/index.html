@@ -17,15 +17,15 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#5d5c61">
+<meta name="theme-color" content="#232226">
 <meta name="robots" content="noindex">
+<link rel="preload" href="/fonts/unbounded-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/onest-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/v2/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","@id":"https://chirkov.here/#me","name":"Nikita Chirkov","alternateName":["Никита Чирков","frezj"],"url":"https://chirkov.here/","email":"mailto:nikita@chirkov.here","jobTitle":"Data Lead (Engineering & Analytics)","address":{"@type":"PostalAddress","addressLocality":"Belgrade","addressCountry":"RS"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Technische Universität Berlin"},{"@type":"CollegeOrUniversity","name":"RUDN University"}],"knowsAbout":["Data engineering","Data warehousing","ClickHouse","Airflow","Spark","dbt","Snowflake","Power BI","A/B testing","Demand forecasting","LLM applications"],"knowsLanguage":["en","ru","sr","es"],"sameAs":["https://www.linkedin.com/in/frezj","https://github.com/frezj","https://t.me/frezj"]}
 </script>
 <script defer src="/v2/app.js"></script>
-<link rel="preload" href="/v2/img/hero.webp" as="image">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -64,9 +64,10 @@
 
 <main id="main">
   <section class="banner">
+    <div class="wrap banner-grid">
     <div class="banner-in">
       <p class="open"><i aria-hidden="true"></i>Open to Data Lead and Head of Data roles</p>
-      <h1 class="name">Nikita Chirkov</h1>
+      <h1 class="name"><span>Nikita</span><span class="tail">Chirkov</span></h1>
       <p class="role">Data Lead (Engineering &amp; Analytics) in Belgrade. 9 years in data. I have led teams of 5 to 20 people.</p>
       <p class="now">Now: Lead Data Engineer at Novacard, consumer lending in Mexico, remote.</p>
       <div class="cta">
@@ -80,6 +81,7 @@
       <div><dt>8</dt><dd>markets with ML in production</dd></div>
       <div><dt>100+ TB</dt><dd>databases I work with</dd></div>
     </dl>
+    </div>
   </section>
 
   <nav class="secnav" aria-label="Sections">
@@ -196,6 +198,8 @@
         </div>
       </div>
     </div>
+    <div class="res-bottom">
+    <div class="res-nums">
     <h3 class="sub-h">More numbers</h3>
     <div class="card tablecard">
       <table class="nums">
@@ -213,11 +217,14 @@
       </table>
     </div>
     <p class="note">How it was measured: billing data, A/B tests and test cases. Speed comes from load tests. Savings come from finance reports and the actual drop in vendor invoices.</p>
-
+    </div>
+    <div class="res-story">
     <h3 class="sub-h">The collections story</h3>
     <div class="card story">
       <p>For three weeks I also ran collections. I changed the strategy: we moved to a personalized approach to debtors and used ML for the analysis.</p>
       <p>The repayment rate went from 51% to 85%, a company record. To be fair, the low starting point helped too.</p>
+    </div>
+    </div>
     </div>
   </div>
 </section>
@@ -228,28 +235,24 @@
     <p class="lead">What I built. Each of these runs on databases with 50+ tables and over 100 TB of data.</p>
     <div class="grid3">
       <article class="card proj">
-        <img class="thumb" src="/v2/img/p-report.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">LLM</span>
         <h3>Report generator</h3>
         <p>Builds reports for the C-level team with an LLM on top of the warehouse.</p>
         <div class="tags"><span class="tag">LLM</span><span class="tag">ClickHouse</span><span class="tag">Python</span></div>
       </article>
       <article class="card proj">
-        <img class="thumb" src="/v2/img/p-analyst.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">LLM</span>
         <h3>AI analyst</h3>
         <p>Handles ad-hoc requests and answers questions about the data.</p>
         <div class="tags"><span class="tag">LLM</span><span class="tag">SQL</span><span class="tag">Python</span></div>
       </article>
       <article class="card proj">
-        <img class="thumb" src="/v2/img/p-semantic.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">BI</span>
         <h3>Semantic layer generator</h3>
         <p>Reads the ClickHouse schema and builds a semantic layer for Superset.</p>
         <div class="tags"><span class="tag">ClickHouse</span><span class="tag">Superset</span><span class="tag">LLM</span></div>
       </article>
       <article class="card proj">
-        <img class="thumb" src="/v2/img/p-dwh.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">DWH</span>
         <h3>New warehouse on ClickHouse</h3>
         <p>Debezium CDC and Spark. More than 10 sources load in near real time.</p>
@@ -257,7 +260,6 @@
         <div class="tags"><span class="tag">ClickHouse</span><span class="tag">Debezium</span><span class="tag">Spark</span></div>
       </article>
       <article class="card proj">
-        <img class="thumb" src="/v2/img/p-forecast.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">ML</span>
         <h3>Demand forecast</h3>
         <p>ML forecast in production in 8 markets of South-East Europe.</p>
@@ -265,7 +267,6 @@
         <div class="tags"><span class="tag">Snowflake</span><span class="tag">Airflow</span><span class="tag">Power BI</span></div>
       </article>
       <article class="card proj">
-        <img class="thumb" src="/v2/img/p-anomaly.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">ML</span>
         <h3>Anomaly detection in collections</h3>
         <p>Flags high-risk accounts before the manual check does.</p>

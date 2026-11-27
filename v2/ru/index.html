@@ -18,15 +18,15 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#5d5c61">
+<meta name="theme-color" content="#232226">
 <meta name="robots" content="noindex">
+<link rel="preload" href="/fonts/unbounded-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/v2/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","@id":"https://chirkov.here/#me","name":"Никита Чирков","alternateName":["Nikita Chirkov","frezj"],"url":"https://chirkov.here/ru/","email":"mailto:nikita@chirkov.here","jobTitle":"Data Lead (Engineering & Analytics)","address":{"@type":"PostalAddress","addressLocality":"Белград","addressCountry":"RS"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Technische Universität Berlin"},{"@type":"CollegeOrUniversity","name":"РУДН"}],"knowsAbout":["Data engineering","Data warehousing","ClickHouse","Airflow","Spark","dbt","Snowflake","Power BI","A/B testing","Demand forecasting","LLM applications"],"knowsLanguage":["ru","en","sr","es"],"sameAs":["https://www.linkedin.com/in/frezj","https://github.com/frezj","https://t.me/frezj"]}
 </script>
 <script defer src="/v2/app.js"></script>
-<link rel="preload" href="/v2/img/hero.webp" as="image">
 </head>
 <body>
 <a class="skip" href="#main">К содержанию</a>
@@ -65,9 +65,10 @@
 
 <main id="main">
   <section class="banner">
+    <div class="wrap banner-grid">
     <div class="banner-in">
       <p class="open"><i aria-hidden="true"></i>Открыт к ролям Data Lead и Head of Data</p>
-      <h1 class="name">Никита Чирков</h1>
+      <h1 class="name"><span>Никита</span><span class="tail">Чирков</span></h1>
       <p class="role">Data Lead (Engineering &amp; Analytics) в Белграде. 9 лет в данных. Руководил командами от 5 до 20 человек.</p>
       <p class="now">Сейчас: Lead Data Engineer в Novacard, потребкредиты в Мексике, удалённо.</p>
       <div class="cta">
@@ -81,6 +82,7 @@
       <div><dt>8</dt><dd>стран с ML в проде</dd></div>
       <div><dt>100+ ТБ</dt><dd>в базах, с которыми работаю</dd></div>
     </dl>
+    </div>
   </section>
 
   <nav class="secnav" aria-label="Разделы">
@@ -197,6 +199,8 @@
         </div>
       </div>
     </div>
+    <div class="res-bottom">
+    <div class="res-nums">
     <h3 class="sub-h">Ещё цифры</h3>
     <div class="card tablecard">
       <table class="nums">
@@ -214,11 +218,14 @@
       </table>
     </div>
     <p class="note">Как считали: по данным биллинга, A/B-тестам и тест-кейсам. Скорость мерили нагрузочным тестированием. Экономию считали по финансовой отчётности и по фактическому снижению счетов от подрядчиков.</p>
-
+    </div>
+    <div class="res-story">
     <h3 class="sub-h">История со взысканием</h3>
     <div class="card story">
       <p>На три недели мне отдали ещё и взыскание. Я поменял стратегию: перешли на персонализированный подход к должникам и подключили ML для анализа.</p>
       <p>Доля возвратов выросла с 51% до 85%. Это рекорд компании. Честно скажу, помогла и низкая база.</p>
+    </div>
+    </div>
     </div>
   </div>
 </section>
@@ -229,28 +236,24 @@
     <p class="lead">Что я построил. Везде больше 50 таблиц и больше 100 ТБ данных.</p>
     <div class="grid3">
       <article class="card proj">
-        <img class="thumb" src="/v2/img/p-report.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">LLM</span>
         <h3>Генератор отчётов</h3>
         <p>Собирает отчёты для C-level с помощью LLM поверх хранилища.</p>
         <div class="tags"><span class="tag">LLM</span><span class="tag">ClickHouse</span><span class="tag">Python</span></div>
       </article>
       <article class="card proj">
-        <img class="thumb" src="/v2/img/p-analyst.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">LLM</span>
         <h3>ИИ-аналитик</h3>
         <p>Закрывает ad-hoc запросы и отвечает на вопросы по данным.</p>
         <div class="tags"><span class="tag">LLM</span><span class="tag">SQL</span><span class="tag">Python</span></div>
       </article>
       <article class="card proj">
-        <img class="thumb" src="/v2/img/p-semantic.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">BI</span>
         <h3>Генератор семантического слоя</h3>
         <p>Читает схему ClickHouse и строит семантический слой для Superset.</p>
         <div class="tags"><span class="tag">ClickHouse</span><span class="tag">Superset</span><span class="tag">LLM</span></div>
       </article>
       <article class="card proj">
-        <img class="thumb" src="/v2/img/p-dwh.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">DWH</span>
         <h3>Новое хранилище на ClickHouse</h3>
         <p>Debezium CDC и Spark. Больше 10 источников грузятся почти в реальном времени.</p>
@@ -258,7 +261,6 @@
         <div class="tags"><span class="tag">ClickHouse</span><span class="tag">Debezium</span><span class="tag">Spark</span></div>
       </article>
       <article class="card proj">
-        <img class="thumb" src="/v2/img/p-forecast.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">ML</span>
         <h3>Прогноз спроса</h3>
         <p>ML-прогноз в проде в 8 странах Юго-Восточной Европы.</p>
@@ -266,7 +268,6 @@
         <div class="tags"><span class="tag">Snowflake</span><span class="tag">Airflow</span><span class="tag">Power BI</span></div>
       </article>
       <article class="card proj">
-        <img class="thumb" src="/v2/img/p-anomaly.webp" alt="" width="800" height="450" loading="lazy">
         <span class="k">ML</span>
         <h3>Аномалии во взыскании</h3>
         <p>Находит рискованные счета раньше ручной проверки.</p>
